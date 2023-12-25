@@ -1,0 +1,17 @@
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.Live {
+    font-family:monospace;
+    color:white;
+    font-size:15px;
+}
+.container-fluid { 
+    font-size:17px;
+}
+.navbar-brand {
+    font-size: 30px;
+}

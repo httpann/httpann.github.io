@@ -1,0 +1,237 @@
+body {
+    background: rgb(196,190,200);
+    background: linear-gradient(90deg, rgba(196,190,200,1) 0%, rgba(210,210,212,1) 50%, rgba(75,75,75,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x:hidden;
+    box-sizing:border-box;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background:rgb(255, 255, 255);
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+h1 {
+    font-family:'Trocchi', serif;
+    color:rgb(0, 0, 0);
+}
+.logo {
+    width:160px;
+    height:60px;
+}
+nav a {
+    font-family:'Arial Narrow';
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:18px;
+    margin: 20px;
+}
+nav a:hover {
+    color: rgb(90, 90, 90);
+}
+.container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    margin-top:13vh;
+}
+.card {
+    background:rgb(255, 255, 255);
+    width:504px;
+    height:820px;
+    margin:40px;
+    border: 2px solid rgb(255, 255, 255);
+    transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function:ease;
+    transition-delay:0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.card:hover {
+    transform:translateY(-10px);
+}
+.card-image {
+    margin-bottom:15px;
+    background-size:cover;
+}
+.card p {
+    padding:10px;
+    font-size:19px;
+    font-family: arial;
+}
+.card h2 {
+    padding:10px;
+    font-family: 'Arial Narrow';
+}
+.image {
+    width:450px;
+    height:450px;
+    margin-left:20px;
+    margin-top:30px
+}
+ul li {
+    font-family: 'Arial Narrow';
+    font-size:17px;
+    list-style:none;
+    margin-top:5px;
+    margin-left:2px;
+}
+.smallcard {
+    background-color:rgb(160, 160, 160);
+    width:250px;
+    height:450px;
+    margin:100px;
+    border:3px dashed rgb(85, 75, 54);
+    margin-bottom:-50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.small-container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+
+}
+.poster {
+    height:700px;
+    width:1100px;
+    margin-top:15vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top:60px;
+}
+.bigcard {
+    background-color:rgb(63, 63, 63);
+    width:1200px;
+    height:750px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.footer {
+    background-color:rgb(37, 37, 37);
+    padding:70px;
+    font-family: Verdana, Geneva;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.7);
+    margin-top:15vh;
+}
+.container-down {
+    max-width:1170px;
+    margin:auto;
+}
+ul {
+    list-style:none;
+}
+.footer-col {
+    width:25%;
+    padding:0 15px;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer-col h4 {
+    font-size:20px;
+    color:white;
+    text-transform:capitalize;
+    margin-bottom:35px;
+    position:relative;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom:10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform:capitalize;
+    color:white;
+    text-decoration:none;
+    font-weight:300;
+    color:#bbbbbb;
+    display:block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color:rgb(80, 80, 80);
+    padding-left:10px;
+}  
+.footer-col .social-links a{
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    color:#ffffff;
+    transition:all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+    color:gray;
+    background-color:white;
+}
+@media(max-width:767px) {
+    .footer-col {
+        width:50%;
+        margin-bottom:30px;
+    }
+}
+@media(max-width:564px) {
+    .footer-col {
+        width:100%;
+    }
+}
+@media (max-width:767px) {
+    .header h1 {
+        font-size:25px;
+        margin-left:-5vh;
+    }
+    .logo {
+        margin-left:3vh;
+    }
+    nav a {
+        display:inline-flex;
+        margin:1vh;
+        margin-left:4vh;
+    }
+        .poster {
+            margin-top:30vh;
+            width:400px;
+            height:340px;
+            display:block;
+        }
+        .bigcard {
+            width:450px;
+            height:380px;
+        }
+    .container {
+        display:block;
+    }
+    .card {
+        height:fit-content;
+        width:400px;
+    }
+    .image {
+        width:400px;
+        margin-left:-2px;
+    }
+    .small-container {
+        display:block;
+    }
+
+}
